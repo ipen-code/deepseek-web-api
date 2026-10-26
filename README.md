@@ -30,6 +30,8 @@ text: 底层直连成功，没有打开任何页面。
 ## 快速开始
 
 ```bash
+git clone https://github.com/ipen-code/deepseek-web-api
+cd deepseek-web-api
 npm install
 
 # 1. 让桥接浏览器处于已登录状态（见下"登录态"），然后抓 token
