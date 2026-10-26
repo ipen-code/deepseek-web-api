@@ -7,7 +7,7 @@ import {
   renderScorecard,
   verdictFor,
   SCORE_BLOCK_INSTRUCTION,
-} from '../src/rubric.mjs';
+} from '../skills/paper-review-deepseek/src/rubric.mjs';
 
 console.log('dims:', DIMENSIONS.length, '->', DIMENSION_IDS.join(','));
 

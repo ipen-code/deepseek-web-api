@@ -35,7 +35,7 @@ import {
   renderScorecard,
   SCORE_BLOCK_INSTRUCTION,
   DIMENSIONS,
-} from './src/rubric.mjs';
+} from './skills/paper-review-deepseek/src/rubric.mjs';
 
 const SERVER_INFO = { name: 'deepseek-web', version: '0.2.0' };
 

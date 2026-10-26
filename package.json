@@ -12,6 +12,7 @@
     "src",
     "wasm",
     "tools",
+    "skills",
     "README.md",
     "LICENSE"
   ],
@@ -22,7 +23,10 @@
     "capture": "node tools/capture-token.mjs",
     "smoke": "node test/smoke.mjs",
     "stream": "node test/stream.mjs",
-    "multiturn": "node test/multiturn.mjs"
+    "multiturn": "node test/multiturn.mjs",
+    "test": "node test/rubric.test.mjs",
+    "test:skill": "node skills/paper-review-deepseek/test/rubric.test.mjs",
+    "review": "node skills/paper-review-deepseek/tools/ask-paper.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.2",
