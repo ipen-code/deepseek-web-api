@@ -1,0 +1,41 @@
+{
+  "name": "deepseek-web-mcp",
+  "version": "0.1.0",
+  "description": "Talk to chat.deepseek.com directly from your own logged-in web session — no API key, no billing, no browser window.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "deepseek-web-mcp": "index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "src",
+    "wasm",
+    "tools",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "capture": "node tools/capture-token.mjs",
+    "smoke": "node test/smoke.mjs",
+    "stream": "node test/stream.mjs",
+    "multiturn": "node test/multiturn.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2",
+    "zod": "^4.0.0"
+  },
+  "optionalDependencies": {
+    "puppeteer-core": "^25.13.0"
+  },
+  "keywords": [
+    "mcp",
+    "deepseek",
+    "model-context-protocol",
+    "chat",
+    "ai"
+  ]
+}

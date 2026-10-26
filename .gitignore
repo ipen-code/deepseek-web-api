@@ -1,0 +1,10 @@
+node_modules/
+out/
+proof/
+.deepseek-feedback/
+.deepseek-review/
+*.log
+.DS_Store
+Thumbs.db
+.env
+token.json
