@@ -174,7 +174,6 @@ src/
   client.mjs     HTTP 客户端、SSE reducer、会话管理
   pow.mjs        PoW 求解（wasm）
   files.mjs      文件上传与解析状态
-  rubric.mjs     8 维度评分卡：定义、解析、聚合、渲染
 tools/
   capture-token.mjs   从浏览器读 token
   review-tex.mjs      （旧版）把 tex 粘进 prompt 的评审 CLI
@@ -186,7 +185,8 @@ skills/
   paper-review-deepseek/   论文评审 Skills 包（自包含，可直接拷走）
     core/                  vendored 直连客户端（client/files/pow）
     wasm/                  PoW 用的哈希器
-    src/lenses.mjs         16 条镜头 + 长度校验 + 定位符抽取
+    src/rubric.mjs         8 维度评分卡（MCP 服务器也从这里取）
+    src/lenses.mjs         17 条镜头 + 4 条追问 + 长度校验 + 定位符抽取
     tools/ask-paper.mjs    主入口
 ```
 

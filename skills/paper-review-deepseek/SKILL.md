@@ -324,8 +324,12 @@ skills/paper-review-deepseek/
 │   ├── ask-paper.mjs        ← **主入口**：发文件 → 问一条或多条 → 可选追问 → 落盘
 │   ├── round-report.mjs     ← 把多轮 JSON 汇总成台账（跨镜头一致才算稳定）
 │   └── review-paper.mjs     ← 可选：多路 persona 评审
-└── test/rubric.test.mjs     ← 评分逻辑单测（不联网）
+└── test/
+    ├── rubric.test.mjs       ← 评分逻辑单测（不联网）
+    └── doc.test.mjs          ← 文档与代码一致性检查（不联网）
 ```
+
+`npm test` 跑全部三个单测，不联网也不需要 token。
 
 `core/` 是自包含的：把整个 `skills/paper-review-deepseek/` 目录拷到任何地方都能直接跑，不需要另外 clone 仓库。
 （已实测：复制到临时目录后独立运行，exit=0。）
