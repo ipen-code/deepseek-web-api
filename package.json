@@ -26,7 +26,8 @@
     "multiturn": "node test/multiturn.mjs",
     "test": "node test/rubric.test.mjs && node skills/paper-review-deepseek/test/rubric.test.mjs && node skills/paper-review-deepseek/test/doc.test.mjs",
     "test:skill": "node skills/paper-review-deepseek/test/rubric.test.mjs",
-    "review": "node skills/paper-review-deepseek/tools/ask-paper.mjs"
+    "review": "node skills/paper-review-deepseek/tools/ask-paper.mjs",
+    "scan": "node tools/scan-secrets.mjs ."
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.2",

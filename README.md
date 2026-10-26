@@ -176,6 +176,7 @@ src/
   files.mjs      文件上传与解析状态
 tools/
   capture-token.mjs   从浏览器读 token
+  scan-secrets.mjs    发版前的凭据扫描（命中即非零退出）
   review-tex.mjs      （旧版）把 tex 粘进 prompt 的评审 CLI
 index.mjs        MCP 服务器
 wasm/
@@ -202,4 +203,8 @@ skills/
 
 ## 合规
 
-只用于你自己的账号、你自己的机器。不要把 token 提交进仓库或分享给别人——那等于分享账号。本项目不含任何凭据。
+只用于你自己的账号、你自己的机器。不要把 token 提交进仓库或分享给别人——那等于分享账号。本项目不含任何凭据：`npm run scan`（`tools/scan-secrets.mjs`）会在发版前扫一遍，命中即非零退出。
+
+## License
+
+MIT，见 [LICENSE](LICENSE)。
